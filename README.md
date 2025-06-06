@@ -1,13 +1,52 @@
-# do-op - Digital Ocean OPs.
+# do-op - DigitalOcean Operations Toolkit
 
-This project will analyze the public DigitalOcean API spec and generate tools to use it in various languages.
+A comprehensive, multi-language toolkit for the DigitalOcean API built from the official OpenAPI v3.0 specification. This project provides type-safe client libraries and CLI tools across multiple programming languages.
 
-## Project Structure
+## 🚀 Features
 
-The project is organized by programming language, with each language having its own directory:
+- **Complete API Coverage**: Built from the official DigitalOcean OpenAPI spec (291 endpoints, 512 operations)
+- **Multi-Language Support**: Native implementations in Go, JavaScript/TypeScript, Rust, C, and Ruby
+- **Type Safety**: Full type definitions and schema validation for all API operations
+- **CLI Tools**: Command-line interfaces for common DigitalOcean operations
+- **Modern Architecture**: Built with current best practices for each language ecosystem
 
-- `go/` - Go language client libraries and tools
-- `js/` - JavaScript/TypeScript client libraries and tools  
-- `rust/` - Rust language client libraries and tools
+## 📁 Project Structure
 
-Each language directory will contain generated client libraries, tools, and examples for interacting with the DigitalOcean API.
+```
+do-op/
+├── go/          # Go client library and CLI
+├── js/          # JavaScript/TypeScript packages
+├── rust/        # Rust crates and CLI
+├── c/           # C library and bindings
+├── ruby/        # Ruby gem and CLI
+└── DigitalOcean-public.v2.yaml  # Official API specification
+```
+
+## 🛠 Supported Languages
+
+- **Go** - Modern Go modules with comprehensive client library
+- **JavaScript/TypeScript** - NPM packages with full TypeScript support
+- **Rust** - Cargo crates with async/await support
+- **C** - Native C library with CMake build system
+- **Ruby** - Ruby gem with idiomatic Ruby interface
+
+## 📊 API Coverage
+
+- 291 unique API endpoints
+- 17+ service areas including Droplets, Kubernetes, Databases, Monitoring
+- 555+ schema definitions for comprehensive type safety
+- Full OAuth 2.0 authentication support
+
+## 🔧 Getting Started
+
+Each language implementation includes its own README with specific installation and usage instructions. Navigate to the appropriate directory to get started:
+
+- [Go Implementation](./go/README.md)
+- [JavaScript/TypeScript](./js/README.md)
+- [Rust Implementation](./rust/README.md)
+- [C Implementation](./c/README.md)
+- [Ruby Implementation](./ruby/README.md)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
