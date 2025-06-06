@@ -9,9 +9,18 @@ This project analyzes the public DigitalOcean API specification and generates to
 ## Key Files
 
 - `DigitalOcean-public.v2.yaml` - Complete DigitalOcean API v2.0 OpenAPI specification (2MB+ file)
+- `digitalocean-api-analysis.md` - Comprehensive analysis of the API specification (291 endpoints, 512 operations)
 - `README.md` - Basic project description
 - `best-practices.txt` - Comprehensive guide for effective Claude Code usage
 - `claude-instance-instructions.md` - Instructions for concurrent development with multiple Claude instances
+
+## Directory Structure
+
+The project is organized by programming language, with each language having its own subfolder:
+
+- `go/` - Go language client libraries and tools
+- `js/` - JavaScript/TypeScript client libraries and tools  
+- `rust/` - Rust language client libraries and tools
 
 ## Development Architecture
 
@@ -23,10 +32,12 @@ This appears to be an early-stage project focused on API specification analysis 
 
 ## Working with the OpenAPI Specification
 
-The DigitalOcean API specification is extensive (2MB+). When working with it:
-- Use `Grep` tool to search for specific endpoints or schemas
-- Use `Read` tool with offset/limit parameters for large file sections
-- The API covers all DigitalOcean services: Droplets, Volumes, Load Balancers, etc.
+The DigitalOcean API specification is extensive (2MB+, 62,799 lines). When working with it:
+- **Primary Reference:** Use `digitalocean-api-analysis.md` for high-level overview and key metrics
+- **Detailed Exploration:** Use `Grep` tool to search for specific endpoints or schemas in the YAML
+- **Large File Sections:** Use `Read` tool with offset/limit parameters for examining specific parts
+- **API Coverage:** 291 endpoints across 17+ service areas (Monitoring, Databases, Apps, Kubernetes, etc.)
+- **Rich Schemas:** 555+ schema definitions for comprehensive type safety
 
 ## Multi-Instance Development
 

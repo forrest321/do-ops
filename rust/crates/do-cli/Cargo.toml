@@ -1,0 +1,24 @@
+[package]
+name = "do-cli"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "DigitalOcean CLI"
+
+[[bin]]
+name = "do-cli"
+path = "src/main.rs"
+
+[dependencies]
+do-client.workspace = true
+do-types.workspace = true
+tokio.workspace = true
+clap.workspace = true
+anyhow.workspace = true
+dialoguer.workspace = true
+comfy-table.workspace = true
+console.workspace = true
+chrono.workspace = true

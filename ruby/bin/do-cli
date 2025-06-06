@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/digitalocean'
+require_relative '../lib/digitalocean/cli'
+
+begin
+  DigitalOcean::CLI::Main.start(ARGV)
+rescue Interrupt
+  puts "\nOperation cancelled"
+  exit 130
+rescue DigitalOcean::Error => e
+  puts "Error: #{e.message}"
+  exit 1
+rescue StandardError => e
+  puts "Unexpected error: #{e.message}"
+  puts e.backtrace if ENV['DEBUG']
+  exit 1
+end

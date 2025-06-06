@@ -1,0 +1,7 @@
+require_relative 'models/base'
+require_relative 'models/account'
+require_relative 'models/droplet'
+require_relative 'models/region'
+require_relative 'models/size'
+require_relative 'models/image'
+require_relative 'models/network'
