@@ -5,7 +5,7 @@ A comprehensive, multi-language toolkit for the DigitalOcean API built from the 
 ## 🚀 Features
 
 - **Complete API Coverage**: Built from the official DigitalOcean OpenAPI spec (291 endpoints, 512 operations)
-- **Multi-Language Support**: Native implementations in Go, JavaScript/TypeScript, Rust, C, and Ruby
+- **Multi-Language Support**: Native implementations in Go, JavaScript/TypeScript, Rust, C, Ruby, and Swift
 - **Type Safety**: Full type definitions and schema validation for all API operations
 - **CLI Tools**: Command-line interfaces for common DigitalOcean operations
 - **Modern Architecture**: Built with current best practices for each language ecosystem
@@ -19,6 +19,7 @@ do-op/
 ├── rust/        # Rust crates and CLI
 ├── c/           # C library and bindings
 ├── ruby/        # Ruby gem and CLI
+├── swift/       # Swift Package Manager library and CLI
 └── DigitalOcean-public.v2.yaml  # Official API specification
 ```
 
@@ -29,6 +30,7 @@ do-op/
 - **Rust** - Cargo crates with async/await support
 - **C** - Native C library with CMake build system
 - **Ruby** - Ruby gem with idiomatic Ruby interface
+- **Swift** - Swift Package Manager with native async/await support
 
 ## 📊 API Coverage
 
@@ -46,6 +48,7 @@ Each language implementation includes its own README with specific installation 
 - [Rust Implementation](./rust/README.md)
 - [C Implementation](./c/README.md)
 - [Ruby Implementation](./ruby/README.md)
+- [Swift Implementation](./swift/README.md)
 
 ## 📄 License
 
